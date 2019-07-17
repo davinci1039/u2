@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../dist/css/theme.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-light shadow-sm bg-primary pl-2">
+    <div class="row">
+      <h1 class="display-4 text-secondary">Generar nuevo Sector</h1>
+    </div>
+  </nav>
+  <form>
+    <div class="form-group">
+      <label for="sector">Código del Sector</label>
+      <input id="sector" name="sector" placeholder="Código del Sector" type="text" required="required" class="form-control here" aria-describedby="sectorHelpBlock">
+      <span id="sectorHelpBlock" class="form-text text-muted">Ej.: TE, TP, TS, IN, PP, SGP, etc.</span>
+    </div>
+    <div class="form-group">
+      <label for="descripcion">Nombre del Sector</label>
+      <input id="descripcion" name="descripcion" placeholder="Detalle del nombre del sector" type="text" class="form-control here" aria-describedby="descripcionHelpBlock" required="required">
+      <span id="descripcionHelpBlock" class="form-text text-muted">Ej.: UG - Ingeniería Eléctrica, CNA - Sub Gerencia de Producción, etc.</span>
+    </div>
+    <div class="form-group">
+      <button name="submit" type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+  </form>
+</body>
+
+</html>

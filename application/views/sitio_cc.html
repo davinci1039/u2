@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../dist/css/theme.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-light shadow-sm bg-primary pl-2">
+    <div class="row">
+      <h1 class="display-4 text-secondary">Nueva distribución de Copia controlada</h1>
+    </div>
+  </nav>
+  <div class="py-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"></div>
+      </div>
+    </div>
+  </div>
+  <form>
+    <div class="form-group">
+      <label for="numero"><b>Número de CC</b></label>
+      <input id="numero" name="numero" placeholder="Número único de Copia Controlada" type="text" aria-describedby="numeroHelpBlock" required="required" class="form-control here">
+      <span id="numeroHelpBlock" class="form-text text-muted">Ej.: 10, 11, 12, etc.</span>
+    </div>
+    <div class="form-group">
+      <label for="descripcion">Nombre <b>de Distribución</b></label>
+      <input id="descripcion" name="descripcion" placeholder="Nombre de Distribución de Copia Controlada" type="text" class="form-control here" aria-describedby="descripcionHelpBlock">
+      <span id="descripcionHelpBlock" class="form-text text-muted">Ej.: Oficina Técnica Operaciones Unidad II, Capacitación, Proveedores, etc.</span>
+    </div>
+    <div class="form-group">
+      <button name="submit" type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+  </form>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+</body>
+
+</html>

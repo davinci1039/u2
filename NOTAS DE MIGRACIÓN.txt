@@ -1,0 +1,18 @@
+Flowsheets:
+
+=== VISUAL ===
+
+Columnas estándar de listas de documentos:
+- nombre
+- revisión
+- título
+- os/kks
+- ver más -> abre modal o right-bar con todos los datos
+- ver / descargar
+
+Opciones estándar de listas de documentos:
+- Revisionar -> abre modal con campos: elegir archivo, revision, titulo, 
+- asignar puenteo (si no tiene puenteo asignado) -> abre modal con 2 tabs: 1 con select de MIT dadas de alta, 1 para de dar de alta MIT
+- modificar puenteo (si tiene puenteo asignado) -> abre modal con datos de puenteo (MIT)
+- anular puenteo/normalizar (si tiene puenteo asignado) -> abre modal con campos: motivo, submit y cancelar normalizacion
+- anular documento -> abre modal con campos: motivo (min 10 caracteres), submit y cancelar

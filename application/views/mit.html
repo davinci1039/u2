@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../dist/css/theme.css">
+  <link href="../../dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <nav class="navbar navbar-light shadow-sm bg-primary pl-2">
+    <div class="row">
+      <h1 class="display-4 text-secondary">MIT/Puenteo Nuevo</h1>
+    </div>
+  </nav>
+  <div class="py-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"></div>
+      </div>
+    </div>
+  </div>
+  <form>
+    <div class="form-group">
+      <label for="puenteo"><strong>MIT/Puenteo existente</strong></label>
+      <div>
+        <select id="puenteo" name="puenteo" class="custom-select" aria-describedby="puenteoHelpBlock" required="required">
+          <option value="rabbit">Rabbit</option>
+          <option value="duck">Duck</option>
+          <option value="fish">Fish</option>
+        </select>
+        <span id="puenteoHelpBlock" class="form-text text-muted">Seleccione MIT o Puenteo cargado previamente</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="tipo_puenteo"><b>Tipo de Puenteo</b></label>
+      <div>
+        <select id="tipo_puenteo" name="tipo_puenteo" class="custom-select" aria-describedby="tipo_puenteoHelpBlock" required="required">
+          <option value="pm">PM - Puenteo Mecánico</option>
+          <option value="pe">PE - Puenteo Eléctrico</option>
+          <option value="pi">PI - Puenteo I&amp;C</option>
+        </select>
+        <span id="tipo_puenteoHelpBlock" class="form-text text-muted">Seleccione el tipo de Puenteo (PM, PE, PI, etc.)</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="numero_puenteo"><b>Número de Puenteo</b></label>
+      <input id="numero_puenteo" name="numero_puenteo" placeholder="Número de Puenteo" type="text" class="form-control here" aria-describedby="numero_puenteoHelpBlock" required="required">
+      <span id="numero_puenteoHelpBlock" class="form-text text-muted">Ejemplo: 154</span>
+    </div>
+    <div class="form-group">
+      <label for="mit"><b>Número de MIT</b></label>
+      <input id="mit" name="mit" placeholder="Número de MIT asociada" type="text" class="form-control here" aria-describedby="mitHelpBlock" required="required">
+      <span id="mitHelpBlock" class="form-text text-muted">Ejemplo: 14</span>
+    </div>
+    <div class="form-group">
+      <label for="ano_mit"><b>Año</b></label>
+      <div>
+        <select id="ano_mit" name="ano_mit" class="custom-select" aria-describedby="ano_mitHelpBlock" required="required">
+          <option value="rabbit">Rabbit</option>
+          <option value="duck">Duck</option>
+          <option value="fish">Fish</option>
+        </select>
+        <span id="ano_mitHelpBlock" class="form-text text-muted">Seleccione el año en que se generó la MIT.</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <button name="submit" type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+  </form>
+  
+</body>
+
+</html>
